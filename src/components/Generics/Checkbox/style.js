@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Checkbox } from "antd";
-import  { CheckboxChangeEvent } from 'antd/es/checkbox';
 
 export const Container = styled.div``;
 

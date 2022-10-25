@@ -1,8 +1,6 @@
 import React from 'react'
-import {Select} from 'antd'
 import { Section, Wrapper, Selec, Opt, TextArea } from './style'
 import { Input, Button } from '../../Generics';
-const { Option } = Select;
 
 export const TourDate = () => {
   return (

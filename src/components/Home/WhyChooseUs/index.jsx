@@ -4,8 +4,6 @@ import {
   Description,
   Factor,
   Icon,
-  SubTitle,
-  Title,
   Wrapper,
 } from "./style";
 

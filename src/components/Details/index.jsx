@@ -18,7 +18,6 @@ import {
   Address,
   Wrapper,
 } from "./style";
-import Main from "../../assets/images/main.png";
 import One from "../../assets/images/one.png";
 import Two from "../../assets/images/two.png";
 import Three from "../../assets/images/three.png";
@@ -33,11 +32,12 @@ const { REACT_APP_BASE_URL: url } = process.env;
 
 export const Details = () => {
   const { id } = useParams();
+  // eslint-disable-next-line
   const [map, setMap] = useState(null);
   // const [data, setData] = useState(body);
   const [data, setData] = useState([]);
 
-  const { refetch } = useQuery(
+  useQuery(
     "gethouse by id",
     () =>
       fetch(`${url}/v1/houses/id/${id}`, {
